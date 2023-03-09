@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
 @font-face {
-    font-family: nicoMoji;
-    src: url(./fonts/NicoMoji-Regular.ttf);
+  font-family: nicoMoji;
+  src: url(./fonts/NicoMoji-Regular.ttf);
 }
 html,
 body,
@@ -128,25 +128,21 @@ q:after {
   content: "";
   content: none;
 }
-
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
-  background: f8fcff;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: #b079f5;
+  background: #ff7a00;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7f49f0;
+  background: #ff5e00;
 }
 
 html {
+  overflow: overlay;
   overflow-x: hidden;
   background-size: cover;
   min-height: 100vh;
@@ -166,19 +162,13 @@ html {
 
 .yeyTitle {
   font-size: 200px;
-  color: purple;
   font-weight: 400;
   font-family: "nicoMoji";
-  background: linear-gradient(
-    159.59deg,
-    #7e48f0 -27.51%,
-    #7f49f0 32.04%,
-    #b079f5 72.99%
-  );
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.9));
+  background: linear-gradient(90deg, #8f00ff -3.82%, #ff7a00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 10px 10px 20px rgba(102, 116, 189, 0.3);
   margin: auto;
   margin-top: 35vh;
 }
@@ -190,10 +180,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(142.32deg, #ff3c82 55.87%, #ff5995 85.54%);
-  box-shadow: 5px 5px 25px rgba(76, 82, 113, 0.35);
-  border-radius: 50vw;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background: linear-gradient(180deg, #ff9900 3.91%, #ff3d00 127.23%);
+  box-shadow: 5px 5px 15px rgba(72, 46, 35, 0.5);
+  border-radius: 50px;
   height: 4vw;
   width: 4vw;
 }
@@ -214,12 +203,7 @@ html {
 
 .secondPage .enterDiv {
   height: 180vh;
-  background: linear-gradient(
-    170deg,
-    #7e48f0 -27.51%,
-    #7f49f0 32.04%,
-    #b079f5 72.99%
-  );
+  background: linear-gradient(180deg, #8f00ff 0%, #1743b6 100%);
 }
 
 .secondPage .firstPart {
@@ -271,8 +255,8 @@ html {
   border: transparent;
   padding: 0.8vw 1.7vw;
   font-size: 2.2rem;
-  background: linear-gradient(142.32deg, #ff3c82 55.87%, #ff5995 85.54%);
-  box-shadow: 5px 5px 25px rgba(76, 82, 113, 0.35);
+  background: linear-gradient(180deg, #ff9900 3.91%, #ff3d00 127.23%);
+  box-shadow: 5px 5px 15px rgba(72, 46, 35, 0.5);
   border-radius: 50px;
 }
 
