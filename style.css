@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@font-face {
+    font-family: nicoMoji;
+    src: url(./fonts/NicoMoji-Regular.ttf);
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: f8fcff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b079f5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7f49f0;
+}
+
+html {
+  overflow-x: hidden;
+  background-size: cover;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background: linear-gradient(173.51deg, #f8fcff 50.83%, #e3f3fe 95.62%);
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.firstPage {
+  display: flex;
+}
+
+.yeyTitle {
+  font-size: 200px;
+  color: purple;
+  font-weight: 400;
+  font-family: "nicoMoji";
+  background: linear-gradient(
+    159.59deg,
+    #7e48f0 -27.51%,
+    #7f49f0 32.04%,
+    #b079f5 72.99%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 10px 10px 20px rgba(102, 116, 189, 0.3);
+  margin: auto;
+  margin-top: 35vh;
+}
+
+.button {
+  position: absolute;
+  top: 82vh;
+  left: 48vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(142.32deg, #ff3c82 55.87%, #ff5995 85.54%);
+  box-shadow: 5px 5px 25px rgba(76, 82, 113, 0.35);
+  border-radius: 50vw;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 4vw;
+  width: 4vw;
+}
+
+.arrowImg {
+  width: 3vw;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.secondPage {
+  height: 200vh;
+}
+
+.secondPage .firstSVGDiv {
+  transform: scale(-1);
+  margin-top: 0.1vh;
+}
+
+.secondPage .enterDiv {
+  height: 180vh;
+  background: linear-gradient(
+    170deg,
+    #7e48f0 -27.51%,
+    #7f49f0 32.04%,
+    #b079f5 72.99%
+  );
+}
+
+.secondPage .firstPart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 25vh;
+}
+
+.secondPage .h2SecondPage {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.5rem;
+  color: white;
+  margin-top: -12vh;
+  font-size: 5rem;
+}
+
+.secondPage .textPresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondPage .text {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.secondPage p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  max-width: 25vw;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  line-height: 170%;
+}
+
+.secondPage .showMore {
+  font-family: "Nunito", sans-serif;
+  margin-top: 5vh;
+  color: white;
+  border: transparent;
+  padding: 0.8vw 1.7vw;
+  font-size: 2.2rem;
+  background: linear-gradient(142.32deg, #ff3c82 55.87%, #ff5995 85.54%);
+  box-shadow: 5px 5px 25px rgba(76, 82, 113, 0.35);
+  border-radius: 50px;
+}
+
+.buttons {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.buttons:hover {
+  scale: 1.1;
+}
