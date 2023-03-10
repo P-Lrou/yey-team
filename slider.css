@@ -1,0 +1,102 @@
+a,
+a:link,
+a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+.micro-slider {
+  height: 500px;
+  position: relative;
+  width: 100%;
+}
+.micro-slider.fullwidth {
+  height: 500px;
+}
+.micro-slider.fullwidth .slider-item {
+  height: 500px;
+  line-height: 500px;
+  width: 100%;
+}
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 50%;
+}
+.slider-item {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  display: none;
+  font-size: 72px;
+  height: 500px;
+  line-height: 500px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 900px;
+  cursor: pointer;
+}
+.indicators {
+  bottom: 0px;
+  left: 50%;
+  list-style-type: none;
+  margin: 0 0 0 -77px;
+  top: 40vh;
+  padding: 0;
+  position: absolute;
+}
+.indicators li {
+  color: #fff;
+  float: left;
+  height: 16px;
+  margin-right: 8px;
+  text-align: center;
+  width: 16px;
+}
+.indicators li:last-child {
+  margin: 0;
+}
+.indicators a {
+  background: #fff;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+.indicators .active a {
+  background: linear-gradient(180deg, #ff9900 3.91%, #ff3d00 127.23%);
+  box-shadow: 2px 2px 8px rgba(72, 46, 35, 0.5);
+}
+.s1 {
+  background-image: url("./img/portfolio/mathieu.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+.s2 {
+  background-image: url("./img/portfolio/ilan.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+.s3 {
+  background-image: url("./img/portfolio/raphael.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+.s4 {
+  background-image: url("./img/portfolio/anthony.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+.s5 {
+  background-image: url("./img/portfolio/ethan.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+.s6 {
+  background-image: url("./img/portfolio/pierre-louis.png");
+  background-size: cover;
+  border-radius: 30px;
+}

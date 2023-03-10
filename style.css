@@ -143,7 +143,7 @@ q:after {
 
 html {
   overflow: overlay;
-  overflow: hidden;
+  overflow-x: hidden;
   background-size: cover;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -171,6 +171,8 @@ html {
   background-clip: text;
   margin: auto;
   margin-top: 35vh;
+  opacity: 1;
+  animation: yeyTitleArrived 3s;
 }
 
 .button {
@@ -181,10 +183,11 @@ html {
   align-items: center;
   justify-content: center;
   background: linear-gradient(180deg, #ff9900 3.91%, #ff3d00 127.23%);
-  box-shadow: 5px 5px 15px rgba(72, 46, 35, 0.5);
+  box-shadow: 0 5px 15px 0px rgba(72, 46, 35, 0.6);
   border-radius: 50px;
   height: 4vw;
   width: 4vw;
+  animation: opacityArrived 4s;
 }
 
 .arrowImg {
@@ -256,7 +259,6 @@ html {
   padding: 0.8vw 1.7vw;
   font-size: 2.2rem;
   background: linear-gradient(180deg, #ff9900 3.91%, #ff3d00 127.23%);
-  box-shadow: 5px 5px 15px rgba(72, 46, 35, 0.5);
   border-radius: 50px;
 }
 
@@ -267,4 +269,95 @@ html {
 
 .buttons:hover {
   scale: 1.1;
+} 
+
+.secondPart {
+  box-sizing: border-box;
+  font-size: 6.25vmax;
+  font-size: 10.0806451613vmax;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: repeating-linear-gradient(-45deg, #388AEB 20%, #5b1583 40%, #388AEB 60%); */
+  /* background-color: #388AEB; */
+ 
+  background-image: repeating-linear-gradient(-45deg, #1743B6 20%, #AD4FF7 40%, #1743B6 60%);
+
+
+  /* background: linear-gradient(180deg, #AD4FF7 0%, #1743B6 100%);	  */
+  
+  font-size: 0.18rem;
+  font-family: "NicoMoji", serif;
+}
+
+.tirdPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes opacityArrived {
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes yeyTitleArrived {
+  0% {
+    margin-top: -50vh;
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    margin-top: 35vh;
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(72, 46, 35, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(72, 46, 35, 0.2);
+		transform: translatey(-25px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(72, 46, 35, 0.6);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes arrivedLeft {
+  from{
+    margin-left: -120vw;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0vw;
+    opacity: 1;
+  }
+}
+
+@keyframes arrivedRigth {
+  from{
+    margin-right: -120vw;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0vw;
+    opacity: 1;
+  }
 }
