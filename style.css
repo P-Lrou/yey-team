@@ -272,27 +272,6 @@ html {
 } 
 
 .secondPart {
-  box-sizing: border-box;
-  font-size: 6.25vmax;
-  font-size: 10.0806451613vmax;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-image: repeating-linear-gradient(-45deg, #388AEB 20%, #5b1583 40%, #388AEB 60%); */
-  /* background-color: #388AEB; */
- 
-  background-image: repeating-linear-gradient(-45deg, #1743B6 20%, #AD4FF7 40%, #1743B6 60%);
-
-
-  /* background: linear-gradient(180deg, #AD4FF7 0%, #1743B6 100%);	  */
-  
-  font-size: 0.18rem;
-  font-family: "NicoMoji", serif;
-}
-
-.tirdPage {
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -7,7 +7,6 @@
     <title>YEY-TEAM</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="slider.css" />
-    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
     <div class="page firstPage">
@@ -62,36 +61,13 @@
           </div>
         </div>
         <div class="secondPart" id="secondPart">
-          <div id="app">
-            <div class="hero-bg" :style="{ backgroundImage: `url(${activeInfo.img})` }" :key="activeIndex"></div>
-            <div class="hero-title" :key="activeIndex">{{ activeInfo.nameBack }}</div>
-          
-            <div class="round">
-              <div class="item" :class="{ active: activeIndex === key }" @click="activeIndex = key" v-for="(el, key) in list" :key="key" :style="{ transform: itemPosition[key] }">
-                <div class="inner">
-                  <img :src="el.thumbImg" alt="">
-                </div>
-              </div>
-            </div>
-          
-            <div class="hero-info" v-if="activeInfo" :key="activeIndex">
-              <div class="row">
-                <div class="title">Nom</div>
-                <div class="content">{{ activeInfo.name }}</div>
-              </div>
-              <div class="row">
-                <div class="title">role</div>
-                <div class="content">{{ activeInfo.role }}</div>
-              </div>
-              <div class="row">
-                <div class="title">difficulty</div>
-                <div class="content">{{ activeInfo.difficulty }}</div>
-              </div>
-              <div class="row">
-                <div class="title">description</div>
-                <div class="content desc">{{ activeInfo.desc }}</div>
-              </div>
-            </div>
+          <div class="micro-slider">
+            <div class="slider-item s1" data-href="https://www.mathieu-chavanel.fr/" data-target="_blank"></div>
+            <div class="slider-item s2" data-href="https://www.ilan-outhier.fr/" data-target="_blank"></div>
+            <div class="slider-item s3" data-href="https://www.raphaelmakaryan.fr/" data-target="_blank"></div>
+            <div class="slider-item s4" data-href="https://www.anthonypelaz.com/" data-target="_blank"></div>
+            <div class="slider-item s5" data-href="https://www.ethew-dev.space/" data-target="_blank"></div>
+            <div class="slider-item s6" data-href="https://pierrelouisrousseaux.fr/" data-target="_blank"></div>
           </div>
         </div>
       </div>
@@ -125,21 +101,8 @@
         </svg>
       </div>
     </div>
-    <div class="page tirdPage">
-      <div class="micro-slider">
-        <div class="slider-item s1" data-href="https://www.mathieu-chavanel.fr/" data-target="_blank"></div>
-        <div class="slider-item s2" data-href="https://www.ilan-outhier.fr/" data-target="_blank"></div>
-        <div class="slider-item s3" data-href="https://www.raphaelmakaryan.fr/" data-target="_blank"></div>
-        <div class="slider-item s4" data-href="https://www.anthonypelaz.com/" data-target="_blank"></div>
-        <div class="slider-item s5" data-href="https://www.ethew-dev.space/" data-target="_blank"></div>
-        <div class="slider-item s6" data-href="https://pierrelouisrousseaux.fr/" data-target="_blank"></div>
-      </div>
-    </section>
-    </div>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script src='https://unpkg.com/vue@3.2.22/dist/vue.global.js'></script>
-  <script  src="script.js"></script>
   </body>
 </html>

@@ -42,8 +42,7 @@ a:visited {
   bottom: 0px;
   left: 50%;
   list-style-type: none;
-  margin: 0 0 0 -77px;
-  top: 40vh;
+  margin: 0 0 -70px -77px;
   padding: 0;
   position: absolute;
 }
